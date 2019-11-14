@@ -55,7 +55,7 @@ We would like to thank Prof. Bishnu Prasad Das for giving us the opportunity to 
 Through this project we were able to make a bot copy a line following bot using Node MCU for communication and Tiva board for processing and were able to successfully test them on our demo arena.
 
 ## Team Member
-1. [Samriddh Bhalla](https://github.com/)
+1. [Samriddh Bhalla](https://github.com/Samriddh1998)
 2. [Shubhanshu Agarwal](https://github.com/Shubhanshu07)
 
 ## References
