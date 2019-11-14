@@ -1,20 +1,25 @@
 # Swarm-Robotics-on-TIVA-Board
 
-![](https://github.com/)
+![](https://github.com/Shubhanshu07/Swarm-Robotics-on-TIVA-Board/blob/master/Images%20and%20Videos/Images/bot_image3.jpeg)
 ## Abstract
 Swarm robotics is an approach to the coordination of multiple robots as a system which consists of large numbers of mostly simple physical robots. Under the excuse of this project, we made a bot that copies the movement of the other bot without any delay. The aim of the project was to make the bot that will the copy the movement of the line following bot.
 
-## Component Used
-1. LSA-08
-	LSA-08 [2] is the Advanced auto calibrated Line following sensor. It consists of 8 IR transmitter and IR receiver pairs. LSA-08 is typically used for embedded system or robots for line following task.
-2. TIVA Launchpad
-	The EK-TM4C123GXL [4] LaunchPad is a very capable board with a 32-bit 80MHz ARM Cortex-M4F processor. It has many peripherals so it’s possible to do some pretty high performance applications. It also has a very bright RGB LED.
-3.  Node MCU
-	Node MCU [1] is an open source IoT platform. It includes firmware which runs on the ESP8266 Wi-Fi SoC from Espressif Systems, and hardware which is based on the ESP-12 module.
+## COMPONENT USED
+**1. LSA-08**
+
+LSA-08 [2] is the Advanced auto calibrated Line following sensor. It consists of 8 IR transmitter and IR receiver pairs. LSA-08 is typically used for embedded system or robots for line following task.
+
+**2. TIVA Launchpad**
+		
+The EK-TM4C123GXL [4] LaunchPad is a very capable board with a 32-bit 80MHz ARM Cortex-M4F processor. It has many peripherals so it’s possible to do some pretty high performance applications. It also has a very bright RGB LED.
+
+**3. Node MCU**
+
+Node MCU [1] is an open source IoT platform. It includes firmware which runs on the ESP8266 Wi-Fi SoC from Espressif Systems, and hardware which is based on the ESP-12 module.
 
 ## METHODOLOGY
 
-![](flow)
+![](https://github.com/Shubhanshu07/Swarm-Robotics-on-TIVA-Board/blob/master/Images%20and%20Videos/Images/flowchart.png)
 ### Making of Bot 1
 1. Bot 1 is a line following bot. It uses the LSA-08 to performance the aforementioned functionality. The LSA-08 is calibrated to read as white strip as ’1’ and read the black background as ’0’. 
 2. These readings are sent to the Tiva board. Here some processing is done that calculates the speed and direction in which the motor drivers must be driven. 
@@ -27,8 +32,8 @@ Swarm robotics is an approach to the coordination of multiple robots as a system
 This bot comprises a nodeMCU and a motor driver and other basic components. The nodeMCU simply receives the data and sends it to the motor driver. The motor driver then drives the wheels of the bot.
 
 ## USE CASE
-
 Testing of our bots was done on an arena made by white strips on a black chart paper. As soon as a line was detected the bot 1 immediately followed it and the bot 2 copied the movements made by bot 1.
+![](https://github.com/Shubhanshu07/Swarm-Robotics-on-TIVA-Board/blob/master/Images%20and%20Videos/Images/Arena.jpeg)
 
 ## CHALLENGES
 1. Using UART [3] between TIVA Board and Node MCU as we have to set equal baud rate on the both the microcontrollers.
@@ -56,5 +61,5 @@ Through this project we were able to make a bot copy a line following bot using 
 ## References
 1. https://en.wikipedia.org/wiki/NodeMCU. Wikimedia Foundation.
 2.  https://www.robotshop.com/media/files/pdf/manual-lsa08.pdf.
-3.  http://users.ece.utexas.edu/ valvano/.
+3.  http://users.ece.utexas.edu/~valvano/.
 4.  http://www.ti.com/tool/EK-TM4C123GXL. Texas Instrument.
